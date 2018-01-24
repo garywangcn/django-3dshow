@@ -100,8 +100,8 @@
             //var options ={ 'document': '', 'env': 'AutodeskProduction' } ;
             var options ={ 'docid': docs [0].path, env: 'Local' } ;
 
-            //oViewer =new Autodesk.Viewing.Viewer3D ($("#viewer") [0], {}) ; // No toolbar
-            oViewer =new Autodesk.Viewing.Private.GuiViewer3D ($("#viewer") [0], {}) ; // With toolbar
+            oViewer =new Autodesk.Viewing.Viewer3D ($("#viewer") [0], {}) ; // No toolbar
+            //oViewer =new Autodesk.Viewing.Private.GuiViewer3D ($("#viewer") [0], {}) ; // With toolbar
             Autodesk.Viewing.Initializer (options, function () {
 				oViewer.initialize () ;
                 oViewer.addEventListener (Autodesk.Viewing.GEOMETRY_LOADED_EVENT, function (event) {
